@@ -94,7 +94,7 @@ class MyCache:
 
 if __name__ == '__main__':
     #Reading Test Data from input file
-    with open('inputs.json') as json_file:
+    with open('test_data/inputs.json') as json_file:
         data = json.load(json_file)
     # Test the cache
     cache = MyCache()
@@ -122,7 +122,7 @@ if __name__ == '__main__':
                 print("Data not found in Cache..")
         elif(choice == 2):
             #Reading Test Data for updating Cache
-            with open('update.json') as json_file:
+            with open('test_data/update.json') as json_file:
                 update_data = json.load(json_file)
             for obj in update_data:
                 if obj['id'] in cache:
@@ -156,7 +156,7 @@ if __name__ == '__main__':
                 if key in cache:
                     data[i]['class_enrolled'] = cache.get_data(key).get_class_enrolled()
                     data[i]['marks'] = cache.get_data(key).get_marks()
-            with open('inputs.json', 'w') as outfile:
+            with open('test_data/inputs.json', 'w') as outfile:
                 json.dump(data, outfile)
                 print("File restored to disk")
             exit(0)

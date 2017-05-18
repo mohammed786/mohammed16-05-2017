@@ -1,3 +1,5 @@
+# Implementation of cache in python using Dictionary Data Structure
+
 ## Assumptions
 * Assuming that test data would be in JSON
 * There are two files for test Data
@@ -25,7 +27,7 @@
     class_enrolled:<class>
 }]
 ```
-2. Run the **que1.py** file by writing: following statement in cmd for windows or terminal in linux.
+2. Run the **que1.py** file by writing following statement in cmd for windows or terminal in linux.
 ```
 python que1.py
 ```
